@@ -1,0 +1,50 @@
+.full-width {
+    width: 100%;
+  }
+  
+.div-width {
+    width: 80%;
+    margin-left: 80px;
+    margin-top: 10px;
+  }
+
+  .currencyDropdown1{
+    width: 80%;
+  }
+
+  .currencyDropdown2{
+    width: 80%;
+  }
+  
+  .textarea {
+    margin-left: 120px;
+  }
+
+  td {
+    padding-left: 5px;
+  }
+
+  div {
+    border-radius: 5px;
+    background-color: lightsteelblue;
+    padding: 20px;
+  }
+
+  .amount {
+    width: 60%;
+    margin-left: 10px;
+  }
+
+  .result1 {
+    width: 60%;
+    margin-left: 10px;
+  }
+
+.swap{
+    margin-top: -20px;
+    margin-left: 15px;
+}
+
+mat-grid-tile {
+    background: lightblue;
+  }

@@ -1,1 +1,91 @@
-<p>currency-exchange-widget works!</p>
+<div class="div-width">
+    <form>
+        <table class="full-width">
+            <tr>
+            <td>
+              <mat-form-field class="amount" appearance="outline">
+              <mat-label>Amount</mat-label>
+              <input type="number" matInput value="1" [(ngModel)]="amount" name="amount">
+            </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field class="currencyDropdown1">
+                    <mat-select [(ngModel)]="currencySwap1" name="currencySwap1" >
+                        <mat-option value="EUR">EUR</mat-option>
+                        <mat-option value="USD">USD</mat-option>
+                        <mat-option value="JPY">JPY</mat-option>
+                        <mat-option value="NGN">NGN</mat-option>
+                      </mat-select>
+                  </mat-form-field>
+            </td>
+            <td>
+                <div class="swap">
+                    <button mat-raised-button (click)="onSwap(currencySwap1,currencySwap2)">
+                        <mat-icon>arrow_back</mat-icon>
+                        <mat-icon>arrow_forward</mat-icon>
+                    </button>
+
+                </div>
+            </td>
+            <td>
+              <mat-form-field class="currencyDropdown2">
+                <mat-select [(ngModel)]="currencySwap2" name="currencySwap2">
+                        <mat-option value="EUR">EUR</mat-option>
+                        <mat-option value="USD">USD</mat-option>
+                        <mat-option value="JPY">JPY</mat-option>
+                        <mat-option value="NGN">NGN</mat-option>
+                  </mat-select>
+              </mat-form-field>
+            </td>
+            <td>
+                <div class="swap">
+                    <button mat-raised-button color="primary"> Convert </button>
+                </div>
+            </td>
+          </tr>
+        </table>
+    </form>
+
+    <form>
+        <table class="">
+            <tr>
+            <td>
+            <mat-form-field>
+              <input appearance="fill" matInput readonly value="1 EUR = xxxx USD">
+              </mat-form-field>
+            </td>
+            <td>
+                <div class="textarea" >
+                <mat-form-field>
+                    <textarea matInput readonly></textarea>
+                  </mat-form-field>
+                </div>
+            </td>
+            <td>
+                <div class="swap">
+                    <button mat-raised-button color="primary"> More Details </button>
+                </div>
+            </td>
+          </tr>
+        </table>
+    </form>
+</div>
+
+<div class="div-width">
+    <form>
+        <mat-grid-list cols="3" rowHeight="3:1" [gutterSize]="'10px'">
+            <mat-grid-tile>1</mat-grid-tile>
+            <mat-grid-tile>2</mat-grid-tile>
+            <mat-grid-tile>3</mat-grid-tile>
+            <mat-grid-tile>4</mat-grid-tile>
+            <mat-grid-tile>5</mat-grid-tile>
+            <mat-grid-tile>6</mat-grid-tile>
+            <mat-grid-tile>7</mat-grid-tile>
+            <mat-grid-tile>8</mat-grid-tile>
+            <mat-grid-tile>9</mat-grid-tile>
+          </mat-grid-list>
+    </form>
+</div>
+
+
+

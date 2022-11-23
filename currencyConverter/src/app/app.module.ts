@@ -14,6 +14,10 @@ import { MatListModule } from "@angular/material/list";
 import { MatIconModule } from "@angular/material/icon";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CurrencyExchangeWidgetComponent } from './components/currency-exchange-widget/currency-exchange-widget.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -32,8 +36,13 @@ import { CurrencyExchangeWidgetComponent } from './components/currency-exchange-
     MatToolbarModule,
     MatButtonModule,
     MatListModule,
+    MatGridListModule,
+    MatFormFieldModule,
     MatIconModule,
     BrowserAnimationsModule,
+    MatInputModule,
+    MatSelectModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
