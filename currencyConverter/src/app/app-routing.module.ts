@@ -15,7 +15,7 @@ const routes: Routes = [
   },
   {
     path: 'currency-details-page',
-    component: CurrencyDetailsPageComponent,
+    component: CurrencyDetailsPageComponent, data: { currencyTitle: "EUR - European Union Euro" } 
   },
 ];
 
