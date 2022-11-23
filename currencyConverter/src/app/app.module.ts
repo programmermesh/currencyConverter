@@ -18,6 +18,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { GridListComponent } from './grid-list/grid-list.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     CurrencyDetailsPageComponent,
     NavbarComponent,
     CurrencyExchangeWidgetComponent,
+    GridListComponent,
   ],
   imports: [
     BrowserModule,
