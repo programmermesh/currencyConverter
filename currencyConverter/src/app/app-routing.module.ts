@@ -5,22 +5,22 @@ import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   {
-    path: "",
-    redirectTo: "home",
-    pathMatch: "full",
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full',
   },
   {
-    path: "home",
+    path: 'home',
     component: HomeComponent,
   },
   {
-    path: "currency-details-page",
+    path: 'currency-details-page',
     component: CurrencyDetailsPageComponent,
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
